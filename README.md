@@ -39,5 +39,5 @@ Find the number of visible sources in the NVSS catalog for given interferometer 
 python python find_nsource.py --antenna_file ./data/antenna_gain.csv --catalog_file ./data/NVSS_cat_pared.txt --bandwidth 200e6 --start_freq 1376e6 --rad 10 --SNR_lim 10 --t_obs 5 --Tsys_antenna 200
 ```
 
-#### `locations.py` and 'utilities.py'
+#### `locations.py` and `utilities.py'
 Helper scripts dealing with receiver positions and interferometer characteristics used in the above analysis scripts.
