@@ -29,3 +29,12 @@ Correct the phase of complex visibilities in a FITS file with data from a PPP cl
 ```bash
 python clock_correct_ppp.py --ant1 FD_VLBA --ant2 DBR205 --pppclockfile uy001b_ppp_data_corrdbr205.txt --filename ./data/uy001b1.fits --fileout ./data/uy001b1_corrected.fits
 ```
+
+
+#### `find_nsource.py`
+Find the number of visible sources in the NVSS catalog for given interferometer characteristics. The system temperature of the paired radio telescope is assumed to be that of FD-VLBA.
+
+**Usage:**
+```bash
+python python find_nsource.py --antenna_file ./data/antenna_gain.csv --catalog_file ./data/NVSS_cat_pared.txt --bandwidth 200e6 --start_freq 1376e6 --rad 10 --SNR_lim 10 --t_obs 5 --Tsys_antenna 200
+```
